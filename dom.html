@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>AngularJS HTML DOM</title>
+	</head>
+
+	<body>
+		<h1>Sample Application</h1>
+		<div ng-app = "">
+			<table border = "0"</table>
+				<tr>
+					<td><input type="checkbox" ng-model = "enableDiasbleButton">Disbale Button</td>
+					<td><button ng-disabled = "enableDiasbleButton">Click Here!</button></td>
+				</tr>
+
+				<tr>
+					<td><input type="checkbox" ng-model = "showHide1">Hide Button</td>
+					<td><button ng-disabled = "showHide1">Click Here!</button></td>
+				</tr>	
+
+				<tr>
+					<td><input type="checkbox" ng-model = "showHide2">Show Button</td>
+					<td><button ng-disabled = "showHide2">Click Here!</button></td>
+				</tr>
+
+				<tr>
+					<td><p>Total click: {{ clickCounter }}</p></td>
+					<td><button ng-click = "clickCounter = clickCounter + 1">Click Here!</button></td>
+				</tr>
+		
+		</div>
+
+					
+		<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	
+
+	</body>
+</html>	
